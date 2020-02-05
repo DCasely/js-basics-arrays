@@ -29,3 +29,11 @@ var friendGroups = [
 // What is the result of this line:
 console.log('EXERCISE 2');
 console.log(friendGroups[2][0]);
+
+// TIMEOUT FUNCTION
+
+var todos = ['Buy New Turtle'];
+
+window.setTimeout(function() {
+  // put all of your js code from the lecture here
+}, 500);

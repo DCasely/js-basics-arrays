@@ -11,7 +11,6 @@ while (input !== 'quit') {
   } else if (input === 'delete') {
     deleteTodo();
   }
-
   // ASK AGAIN FOR NEW INPUT
   input = prompt('What would you like to do?');
 }

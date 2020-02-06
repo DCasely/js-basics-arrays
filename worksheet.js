@@ -1,39 +1,48 @@
-var colors = ['red', 'orange', 'yellow'];
+var colors = ['red', 'orange', 'yellow', 'green'];
 
-colors[3] = 'green';
+// for (var i = 0; i < colors.length; i++) {
+//   console.log(colors[i]);
+// }
 
-var dogs = ['Rusty', 'Wyatt', 'Olly'];
+colors.forEach(function(color) {
+  // color is a placeholder, call it whatever you want
+  console.log('This is your color: ' + color);
+});
 
-var friends = ['Charlie', 'Liz', 'David', 'Mattias', 'Liz'];
+function printColor(color) {
+  console.log('*************');
+  console.log(color);
+  console.log('*************');
+}
 
-var fruits = ['banana', 'orange', 'lemon', 'apple', 'mango'];
+printColor('purple');
 
-var nums = [1, 2, 3, 'a', 'b', 445, 34];
+colors.forEach(printColor);
 
-// EXERCISE 1
+// Using the WHILE Loop
 
-var numbers = [22, 67, 33, 96, 88];
+var count = 0;
 
-// What does the following line print?
-console.log('EXERCISE 1');
-console.log(numbers[numbers.length]);
+while (count < colors.length) {
+  console.log(colors[count]);
+  count++;
+}
 
-// EXERCISE 2
+// EXERCISE
 
-var friendGroups = [
-  ['Harry', 'Ron', 'Hermione'],
-  ['Malfoy', 'Crabbe', 'Goyle'],
-  ['Mooney', 'Wormtail', 'Prongs']
-];
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var colors = ['red', 'orange', 'yellow', 'green'];
 
-// What is the result of this line:
-console.log('EXERCISE 2');
-console.log(friendGroups[2][0]);
+numbers.forEach(function(color) {
+  if (color % 3 === 0) {
+    console.log(color);
+  }
+});
 
-// TIMEOUT FUNCTION
+// convert into a For Loop
 
-var todos = ['Buy New Turtle'];
-
-window.setTimeout(function() {
-  // put all of your js code from the lecture here
-}, 500);
+for (var i = 1; i < numbers.length; i++) {
+  if (i % 3 === 0) {
+    console.log(i);
+  }
+}
